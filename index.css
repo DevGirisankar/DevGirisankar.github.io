@@ -259,6 +259,21 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink:focus {
     background: transparent;
 }
+.btn--new {
+    background: transparent;
+    transition: all 0.2s;
+    border: 1px solid  var(--white);
+}
+
+.btn--new::after {
+    display: none;
+}
+
+.btn--new:hover,
+.btn--new:focus {
+    background: transparent;
+    border: 1px solid  transparent;
+}
 
 .link__text {
     position: relative;
