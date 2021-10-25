@@ -11,6 +11,10 @@ const handleFirstTab = (e) => {
   }
 
 }
+function liveViews(response) {
+  document.getElementById('visits').innerText = response.value + " 👀";
+  // console.log(response.value)
+}
 
 const handleMouseDownOnce = () => {
   document.body.classList.remove('user-is-tabbing')
